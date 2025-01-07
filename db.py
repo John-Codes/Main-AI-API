@@ -33,6 +33,14 @@ def init_db(conn: sqlite3.Connection):
                 hashed_password TEXT NOT NULL
             )
         """)
+        # Create monthly_goals table
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS monthly_goals (
+                user_id INTEGER PRIMARY KEY,
+                goal TEXT,
+                created_at TEXT
+            )
+        """)
         conn.commit()
     except sqlite3.Error as e:
         print(f"Error initializing database: {e}")

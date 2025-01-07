@@ -1,1 +1,198 @@
 .env
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Python specific
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.py[cod]
+*.pyo
+.Python
+*.pyd
+
+# Environment
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Logs
+logs/
+*.log
+*.out
+*.log.*
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.cache/
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Sphinx documentation
+docs/_build/
+site/
+
+# Scrapy stuff:
+.scrapy
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# mypy
+.mypy_cache/
+
+# Pytest
+.pytest_cache/
+.cache
+
+# FastAPI specific
+*.db
+instance/
+app_instance/
+
+# Editor directories and files
+.idea/
+.vscode/
+.project
+*.sublime-project
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/
+.history/
+
+# WebStorm
+*.patch
+
+# Pycharm
+.idea/
+*.iml
+*.iws
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+
+# JetBrains
+*.idea/
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.cproject
+*.launch
+.settings/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Intellij
+*.idea/
+*.iml
+
+# Ansible
+*.retry
+
+# AWS
+*.pem
+
+# macOS specific
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Python virtual environments
+pyvenv.cfg
+venv.bak/
+venv.bak/
+
+# pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Coverage
+.coverage
+.coverage.*
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Linux
+*~
+
+
+
+__pycache__
+tests/__pycache__/

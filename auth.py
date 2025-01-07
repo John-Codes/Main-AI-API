@@ -79,6 +79,16 @@ class Authentication:
             print(f"Error in create_access_token: {e}")
             raise
 
+    def decode_token(self, token: str):
+        try:
+            payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+            return payload
+        except JWTError:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Could not validate credentials",
+            )
+
     def signup(self, user: UserCreate, conn):
         try:
             if conn.execute("SELECT 1 FROM users WHERE email = ?", (user.email,)).fetchone():
